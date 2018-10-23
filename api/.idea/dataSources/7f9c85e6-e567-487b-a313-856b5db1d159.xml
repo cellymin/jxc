@@ -1,0 +1,2423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - jxc@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="jxc">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="coupons"/>
+    <schema id="3" name="dbroot"/>
+    <schema id="4" name="hymall360_com"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="mall"/>
+    <schema id="7" name="mysql"/>
+    <schema id="8" name="osadmin"/>
+    <schema id="9" name="performance_schema"/>
+    <schema id="10" name="test"/>
+    <schema id="11" name="thinkcmf"/>
+    <schema id="12" name="vich_ct"/>
+    <schema id="13" name="vich_ct_bak"/>
+    <schema id="14" name="vich_order_system"/>
+    <schema id="15" name="vich_restaurant"/>
+    <schema id="16" name="vich_restaurant_new"/>
+    <schema id="17" name="vich_wx_mall"/>
+    <schema id="18" name="www_havmik_com"/>
+    <schema id="19" name="yierb_crm"/>
+    <table id="20" parent="1" name="vich_codes"/>
+    <table id="21" parent="1" name="vich_companys">
+      <comment>公司表</comment>
+    </table>
+    <table id="22" parent="1" name="vich_count_goods"/>
+    <table id="23" parent="1" name="vich_count_orders">
+      <comment>库存盘点单</comment>
+    </table>
+    <table id="24" parent="1" name="vich_customers">
+      <comment>客户表</comment>
+    </table>
+    <table id="25" parent="1" name="vich_departments">
+      <comment>部门表</comment>
+    </table>
+    <table id="26" parent="1" name="vich_depot_goods">
+      <comment>仓库商品表</comment>
+    </table>
+    <table id="27" parent="1" name="vich_depot_subs">
+      <comment>库位表</comment>
+    </table>
+    <table id="28" parent="1" name="vich_depots">
+      <comment>仓库表</comment>
+    </table>
+    <table id="29" parent="1" name="vich_employees">
+      <comment>员工表</comment>
+    </table>
+    <table id="30" parent="1" name="vich_finance">
+      <comment>财务</comment>
+    </table>
+    <table id="31" parent="1" name="vich_goods">
+      <comment>商品表</comment>
+    </table>
+    <table id="32" parent="1" name="vich_goods_cates">
+      <comment>商品分类表</comment>
+    </table>
+    <table id="33" parent="1" name="vich_goods_units">
+      <comment>商品单位表</comment>
+    </table>
+    <table id="34" parent="1" name="vich_invoices">
+      <comment>采购发票表</comment>
+    </table>
+    <table id="35" parent="1" name="vich_logs_depot">
+      <comment>商品出入库日志</comment>
+    </table>
+    <table id="36" parent="1" name="vich_logs_order">
+      <comment>订单日志表</comment>
+    </table>
+    <table id="37" parent="1" name="vich_menu_url">
+      <comment>功能链接（菜单链接）</comment>
+    </table>
+    <table id="38" parent="1" name="vich_messages">
+      <comment>消息表</comment>
+    </table>
+    <table id="39" parent="1" name="vich_module">
+      <comment>菜单模块</comment>
+    </table>
+    <table id="40" parent="1" name="vich_orders_dh"/>
+    <table id="41" parent="1" name="vich_orders_dh_goods"/>
+    <table id="42" parent="1" name="vich_orders_id"/>
+    <table id="43" parent="1" name="vich_orders_id_goods"/>
+    <table id="44" parent="1" name="vich_orders_ip"/>
+    <table id="45" parent="1" name="vich_orders_ip_goods"/>
+    <table id="46" parent="1" name="vich_orders_iq"/>
+    <table id="47" parent="1" name="vich_orders_iq_goods"/>
+    <table id="48" parent="1" name="vich_orders_od"/>
+    <table id="49" parent="1" name="vich_orders_od_goods"/>
+    <table id="50" parent="1" name="vich_orders_oq"/>
+    <table id="51" parent="1" name="vich_orders_oq_goods"/>
+    <table id="52" parent="1" name="vich_orders_oy"/>
+    <table id="53" parent="1" name="vich_orders_oy_goods"/>
+    <table id="54" parent="1" name="vich_orders_pd"/>
+    <table id="55" parent="1" name="vich_orders_pd_goods"/>
+    <table id="56" parent="1" name="vich_orders_pr"/>
+    <table id="57" parent="1" name="vich_orders_pr_goods"/>
+    <table id="58" parent="1" name="vich_orders_th"/>
+    <table id="59" parent="1" name="vich_orders_th_goods"/>
+    <table id="60" parent="1" name="vich_quick_note">
+      <comment>用于显示的quick note</comment>
+    </table>
+    <table id="61" parent="1" name="vich_suppliers">
+      <comment>供应商表</comment>
+    </table>
+    <table id="62" parent="1" name="vich_sys_log">
+      <comment>操作日志表</comment>
+    </table>
+    <table id="63" parent="1" name="vich_system">
+      <comment>系统配置表</comment>
+    </table>
+    <table id="64" parent="1" name="vich_user">
+      <comment>后台用户</comment>
+    </table>
+    <table id="65" parent="1" name="vich_user_group">
+      <comment>账号组</comment>
+    </table>
+    <column id="66" parent="20" name="code">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="67" parent="20" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="68" parent="20" name="PRIMARY">
+      <columns>code</columns>
+      <primary>1</primary>
+    </key>
+    <column id="69" parent="21" name="companyId">
+      <comment>公司ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="70" parent="21" name="companyName">
+      <comment>公司名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="71" parent="21" name="companyAddress">
+      <comment>公司地址</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="72" parent="21" name="companyTel">
+      <comment>公司电话</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="73" parent="21" name="companyUserName">
+      <comment>公司联系人</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="74" parent="21" name="companyUserPhone">
+      <comment>公司联系人电话</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="75" parent="21" name="companyUserEmail">
+      <comment>公司联系人邮箱</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="76" parent="21" name="companyUserQQ">
+      <comment>公司联系人QQ</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="77" parent="21" name="flag">
+      <comment>0未审核 1已审核 -1删除</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="78" parent="21" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="79" parent="21" name="createUser">
+      <comment>创建人</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="80" parent="21" name="createTime">
+      <comment>创建时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="81" parent="21" name="PRIMARY">
+      <columns>companyId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="82" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="83" parent="22" name="orderId">
+      <comment>订单ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="84" parent="22" name="goodsId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="85" parent="22" name="supplierId">
+      <comment>供应商Id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="86" parent="22" name="depotId">
+      <comment>仓库ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="87" parent="22" name="depotSubId">
+      <comment>库位ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="88" parent="22" name="goodsCnt">
+      <comment>出库数量</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="89" parent="22" name="goodsPrice">
+      <comment>单价</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="90" parent="22" name="remark">
+      <comment>备注</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="91" parent="22" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="92" parent="22" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="93" parent="22" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="94" parent="22" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="95" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="96" parent="23" name="orderId">
+      <comment>订单ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="97" parent="23" name="orderNo">
+      <comment>单号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="98" parent="23" name="totalMoney">
+      <comment>总金额</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="99" parent="23" name="totalCnt">
+      <comment>总数量</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="100" parent="23" name="reviewer">
+      <comment>审核人</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="101" parent="23" name="reviewTime">
+      <comment>审核时间</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="102" parent="23" name="reviewMemo">
+      <comment>审核备注</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="103" parent="23" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="104" parent="23" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="105" parent="23" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="106" parent="23" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="107" parent="23" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="108" parent="23" name="updateTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="109" parent="23" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="110" parent="24" name="customerId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="111" parent="24" name="customerName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="112" parent="24" name="customerAddress">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="113" parent="24" name="customerUserName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="114" parent="24" name="customerUserPhone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="115" parent="24" name="customerUserEmail">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="116" parent="24" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="117" parent="24" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="118" parent="24" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="119" parent="24" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="120" parent="24" name="PRIMARY">
+      <columns>customerId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="121" parent="25" name="departmentId">
+      <comment>部门ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="122" parent="25" name="departmentName">
+      <comment>部门名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="123" parent="25" name="remark">
+      <comment>备注</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="124" parent="25" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="125" parent="25" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="126" parent="25" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="127" parent="25" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="128" parent="25" name="PRIMARY">
+      <columns>departmentId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="129" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="130" parent="26" name="batchNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="131" parent="26" name="depotId">
+      <comment>仓库</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="132" parent="26" name="depotSubId">
+      <comment>库位</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="133" parent="26" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="134" parent="26" name="goodsId">
+      <comment>商品ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="135" parent="26" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="136" parent="26" name="goodsCnt">
+      <comment>数量</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="137" parent="26" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="138" parent="26" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="139" parent="26" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="140" parent="26" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="141" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="142" parent="27" name="depotSubId">
+      <comment>库位ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="143" parent="27" name="depotId">
+      <comment>所属仓库</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="144" parent="27" name="depotSubName">
+      <comment>库位编号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="145" parent="27" name="companyId">
+      <comment>所属公司</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="146" parent="27" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="147" parent="27" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="148" parent="27" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="149" parent="27" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="150" parent="27" name="PRIMARY">
+      <columns>depotSubId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="151" parent="28" name="depotId">
+      <comment>仓库ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="152" parent="28" name="depotName">
+      <comment>仓库名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="153" parent="28" name="companyId">
+      <comment>所属公司</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="154" parent="28" name="employeeId">
+      <comment>仓库负责人</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="155" parent="28" name="isDefault">
+      <comment>1 默认 0非默认</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="156" parent="28" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="157" parent="28" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="158" parent="28" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="159" parent="28" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="160" parent="28" name="PRIMARY">
+      <columns>depotId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="161" parent="29" name="employeeId">
+      <comment>员工ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="162" parent="29" name="companyId">
+      <comment>公司</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="163" parent="29" name="departmentId">
+      <comment>部门ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="164" parent="29" name="employeeName">
+      <comment>员工姓名</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="165" parent="29" name="employeeAddress">
+      <comment>员工住址</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="166" parent="29" name="employeePhone">
+      <comment>员工电话</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="167" parent="29" name="employeeEmail">
+      <comment>员工邮箱</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="168" parent="29" name="employeeQQ">
+      <comment>员工QQ</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="169" parent="29" name="employeeJob">
+      <comment>职务</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="170" parent="29" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="171" parent="29" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="172" parent="29" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="173" parent="29" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="174" parent="29" name="PRIMARY">
+      <columns>employeeId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="175" parent="30" name="financeId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="176" parent="30" name="financeCateId">
+      <comment>分类，科目</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="177" parent="30" name="bankId">
+      <comment>账户ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="178" parent="30" name="money">
+      <comment>金额</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="179" parent="30" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="180" parent="30" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="181" parent="30" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="182" parent="30" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="183" parent="30" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="184" parent="30" name="PRIMARY">
+      <columns>financeId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="185" parent="31" name="goodsId">
+      <comment>商品ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="186" parent="31" name="goodsSn">
+      <comment>商品货号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="187" parent="31" name="goodsBarCode">
+      <comment>条形码</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="188" parent="31" name="goodsName">
+      <comment>商品名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="189" parent="31" name="goodsImg">
+      <comment>商品图片</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="190" parent="31" name="goodsSpec">
+      <comment>规格</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="191" parent="31" name="goodsCateId">
+      <comment>分类ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="192" parent="31" name="goodsUnitId">
+      <comment>单位ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="193" parent="31" name="lastPrice">
+      <comment>上次进价</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="194" parent="31" name="minPrice">
+      <comment>历史最低价</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="195" parent="31" name="maxPrice">
+      <comment>历史最高价</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="196" parent="31" name="avgPrice">
+      <comment>平均采购价</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="197" parent="31" name="productionDate">
+      <comment>生产日期</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="198" parent="31" name="invalidDate">
+      <comment>作废日期</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="199" parent="31" name="searchKey">
+      <comment>助记词 用于快速查询</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="200" parent="31" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="201" parent="31" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="202" parent="31" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="203" parent="31" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="204" parent="31" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="205" parent="31" name="PRIMARY">
+      <columns>goodsId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="206" parent="32" name="cateId">
+      <comment>产品分类ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="207" parent="32" name="parentId">
+      <comment>父级ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="208" parent="32" name="cateName">
+      <comment>分类名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="209" parent="32" name="cateSort">
+      <comment>排序</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="210" parent="32" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="211" parent="32" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="212" parent="32" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="213" parent="32" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="214" parent="32" name="PRIMARY">
+      <columns>cateId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="215" parent="33" name="unitId">
+      <comment>商品单位ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="216" parent="33" name="unitName">
+      <comment>商品单位名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="217" parent="33" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="218" parent="33" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="219" parent="33" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="220" parent="33" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="221" parent="33" name="PRIMARY">
+      <columns>unitId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="222" parent="34" name="invoiceId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="223" parent="34" name="invoiceNo">
+      <comment>发票号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="224" parent="34" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="225" parent="34" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="226" parent="34" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="227" parent="34" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="228" parent="34" name="endTime">
+      <comment>发票到期时间</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="229" parent="34" name="noticeTime">
+      <comment>通知时间</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="230" parent="34" name="createTime">
+      <comment>创建时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="231" parent="34" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="232" parent="34" name="createCompany">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="233" parent="34" name="companyId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="234" parent="34" name="PRIMARY">
+      <columns>invoiceId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="235" parent="35" name="logId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="236" parent="35" name="logUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="237" parent="35" name="logType">
+      <comment>1入库 2 出库</comment>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="238" parent="35" name="logContent">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="239" parent="35" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="240" parent="35" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="241" parent="35" name="orderType">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="242" parent="35" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="243" parent="35" name="PRIMARY">
+      <columns>logId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="244" parent="36" name="logId">
+      <comment>订单日志ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="245" parent="36" name="logUser">
+      <comment>操作人</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="246" parent="36" name="logType">
+      <comment>事件</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="247" parent="36" name="logContent">
+      <comment>结果</comment>
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="248" parent="36" name="orderId">
+      <comment>订单ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="249" parent="36" name="orderType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="250" parent="36" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="251" parent="36" name="PRIMARY">
+      <columns>logId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="252" parent="37" name="menu_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="253" parent="37" name="menu_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="254" parent="37" name="menu_url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="255" parent="37" name="module_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="256" parent="37" name="is_show">
+      <comment>是否在sidebar里出现</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="257" parent="37" name="online">
+      <comment>在线状态，还是下线状态，即可用，不可用。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="258" parent="37" name="shortcut_allowed">
+      <comment>是否允许快捷访问</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="259" parent="37" name="menu_desc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="260" parent="37" name="father_menu">
+      <comment>上一级菜单</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="261" parent="37" name="menu_url">
+      <columns>menu_url</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="262" parent="37" name="PRIMARY">
+      <columns>menu_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="263" parent="37" name="menu_url">
+      <columns>menu_url</columns>
+      <underlying-index>menu_url</underlying-index>
+    </key>
+    <column id="264" parent="38" name="messageId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="265" parent="38" name="fromUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="266" parent="38" name="toUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="267" parent="38" name="content">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="268" parent="38" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="269" parent="38" name="flag">
+      <comment>1已读 -1删除</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="270" parent="38" name="PRIMARY">
+      <columns>messageId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="271" parent="39" name="module_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="272" parent="39" name="module_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="273" parent="39" name="module_url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(128)|0</data-type>
+    </column>
+    <column id="274" parent="39" name="module_sort">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="275" parent="39" name="module_desc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="276" parent="39" name="module_icon">
+      <comment>菜单模块图标</comment>
+      <data-type>varchar(32)|0</data-type>
+      <default-expression>&apos;icon-th&apos;</default-expression>
+    </column>
+    <column id="277" parent="39" name="online">
+      <comment>模块是否在线</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="278" parent="39" name="PRIMARY">
+      <columns>module_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="279" parent="40" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="280" parent="40" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="281" parent="40" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="282" parent="40" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="283" parent="40" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="284" parent="40" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="285" parent="40" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="286" parent="40" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="287" parent="40" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="288" parent="40" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="289" parent="40" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="290" parent="40" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="291" parent="40" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="292" parent="40" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="293" parent="40" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="294" parent="40" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="295" parent="40" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="296" parent="41" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="297" parent="41" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="298" parent="41" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="299" parent="41" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="300" parent="41" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="301" parent="41" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="302" parent="41" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="303" parent="41" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="304" parent="41" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="305" parent="41" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="306" parent="41" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="307" parent="41" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="308" parent="41" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="309" parent="41" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="310" parent="41" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="311" parent="42" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="312" parent="42" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="313" parent="42" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="314" parent="42" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="315" parent="42" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="316" parent="42" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="317" parent="42" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="318" parent="42" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="319" parent="42" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="320" parent="42" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="321" parent="42" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="322" parent="42" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="323" parent="42" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="324" parent="42" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="325" parent="42" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="326" parent="42" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="327" parent="42" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="328" parent="43" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="329" parent="43" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="330" parent="43" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="331" parent="43" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="332" parent="43" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="333" parent="43" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="334" parent="43" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="335" parent="43" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="336" parent="43" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="337" parent="43" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="338" parent="43" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="339" parent="43" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="340" parent="43" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="341" parent="43" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="342" parent="43" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="343" parent="44" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="344" parent="44" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="345" parent="44" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="346" parent="44" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="347" parent="44" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="348" parent="44" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="349" parent="44" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="350" parent="44" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="351" parent="44" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="352" parent="44" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="353" parent="44" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="354" parent="44" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="355" parent="44" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="356" parent="44" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="357" parent="44" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="358" parent="44" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="359" parent="44" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="360" parent="45" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="361" parent="45" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="362" parent="45" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="363" parent="45" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="364" parent="45" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="365" parent="45" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="366" parent="45" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="367" parent="45" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="368" parent="45" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="369" parent="45" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="370" parent="45" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="371" parent="45" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="372" parent="45" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="373" parent="45" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="374" parent="45" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="375" parent="45" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="376" parent="46" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="377" parent="46" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="378" parent="46" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="379" parent="46" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="380" parent="46" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="381" parent="46" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="382" parent="46" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="383" parent="46" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="384" parent="46" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="385" parent="46" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="386" parent="46" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="387" parent="46" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="388" parent="46" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="389" parent="46" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="390" parent="46" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="391" parent="46" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="392" parent="46" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="393" parent="47" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="394" parent="47" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="395" parent="47" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="396" parent="47" name="depotGoodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="397" parent="47" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="398" parent="47" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="399" parent="47" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="400" parent="47" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="401" parent="47" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="402" parent="47" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="403" parent="47" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="404" parent="47" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="405" parent="47" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="406" parent="47" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="407" parent="47" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="408" parent="47" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="409" parent="48" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="410" parent="48" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="411" parent="48" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="412" parent="48" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="413" parent="48" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="414" parent="48" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="415" parent="48" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="416" parent="48" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="417" parent="48" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="418" parent="48" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="419" parent="48" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="420" parent="48" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="421" parent="48" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="422" parent="48" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="423" parent="48" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="424" parent="48" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="425" parent="48" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="426" parent="49" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="427" parent="49" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="428" parent="49" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="429" parent="49" name="depotGoodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="430" parent="49" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="431" parent="49" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="432" parent="49" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="433" parent="49" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="434" parent="49" name="departmentId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="435" parent="49" name="employeeId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="436" parent="49" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="437" parent="49" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="438" parent="49" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="439" parent="49" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="440" parent="49" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="441" parent="49" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="442" parent="49" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="443" parent="49" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="444" parent="50" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="445" parent="50" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="446" parent="50" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="447" parent="50" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="448" parent="50" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="449" parent="50" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="450" parent="50" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="451" parent="50" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="452" parent="50" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="453" parent="50" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="454" parent="50" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="455" parent="50" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="456" parent="50" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="457" parent="50" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="458" parent="50" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="459" parent="50" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="460" parent="50" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="461" parent="51" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="462" parent="51" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="463" parent="51" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="464" parent="51" name="depotGoodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="465" parent="51" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="466" parent="51" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="467" parent="51" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="468" parent="51" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="469" parent="51" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="470" parent="51" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="471" parent="51" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="472" parent="51" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="473" parent="51" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="474" parent="51" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="475" parent="51" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="476" parent="51" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="477" parent="52" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="478" parent="52" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="479" parent="52" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="480" parent="52" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="481" parent="52" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="482" parent="52" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="483" parent="52" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="484" parent="52" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="485" parent="52" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="486" parent="52" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="487" parent="52" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="488" parent="52" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="489" parent="52" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="490" parent="52" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="491" parent="52" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="492" parent="52" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="493" parent="52" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="494" parent="53" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="495" parent="53" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="496" parent="53" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="497" parent="53" name="depotGoodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="498" parent="53" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="499" parent="53" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="500" parent="53" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="501" parent="53" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="502" parent="53" name="departmentId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="503" parent="53" name="employeeId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="504" parent="53" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="505" parent="53" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="506" parent="53" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="507" parent="53" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="508" parent="53" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="509" parent="53" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="510" parent="53" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="511" parent="53" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="512" parent="54" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="513" parent="54" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="514" parent="54" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="515" parent="54" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="516" parent="54" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="517" parent="54" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="518" parent="54" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="519" parent="54" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="520" parent="54" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="521" parent="54" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="522" parent="54" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="523" parent="54" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="524" parent="54" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="525" parent="54" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="526" parent="54" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="527" parent="54" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="528" parent="54" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="529" parent="55" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="530" parent="55" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="531" parent="55" name="depotGoodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="532" parent="55" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="533" parent="55" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="534" parent="55" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="535" parent="55" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="536" parent="55" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="537" parent="55" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="538" parent="55" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="539" parent="55" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="540" parent="55" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="541" parent="55" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="542" parent="55" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="543" parent="55" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="544" parent="55" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="545" parent="56" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="546" parent="56" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="547" parent="56" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="548" parent="56" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="549" parent="56" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="550" parent="56" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="551" parent="56" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="552" parent="56" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="553" parent="56" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="554" parent="56" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="555" parent="56" name="flag">
+      <comment>0创建 1待审核 -3审核未通过 3审核通过 4关闭 -1删除</comment>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="556" parent="56" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="557" parent="56" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="558" parent="56" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="559" parent="56" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="560" parent="56" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="561" parent="56" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="562" parent="57" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="563" parent="57" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="564" parent="57" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="565" parent="57" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="566" parent="57" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="567" parent="57" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="568" parent="57" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="569" parent="57" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="570" parent="57" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="571" parent="57" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="572" parent="57" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="573" parent="57" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="574" parent="57" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="575" parent="57" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="576" parent="57" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="577" parent="58" name="orderId">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="578" parent="58" name="orderNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="579" parent="58" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="580" parent="58" name="depotId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="581" parent="58" name="totalMoney">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="582" parent="58" name="totalCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="583" parent="58" name="reviewer">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="584" parent="58" name="reviewerTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="585" parent="58" name="reviewerMemo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="586" parent="58" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="587" parent="58" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="588" parent="58" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="589" parent="58" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="590" parent="58" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="591" parent="58" name="updateUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="592" parent="58" name="updateTime">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="593" parent="58" name="PRIMARY">
+      <columns>orderId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="594" parent="59" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="595" parent="59" name="orderId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="596" parent="59" name="orderSubNo">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="597" parent="59" name="goodsId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="598" parent="59" name="supplierId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="599" parent="59" name="depotSubId">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="600" parent="59" name="arrivalTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="601" parent="59" name="goodsPrice">
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="602" parent="59" name="goodsCnt">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="603" parent="59" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="604" parent="59" name="flag">
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="605" parent="59" name="createCompany">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="606" parent="59" name="createUser">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="607" parent="59" name="createTime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="608" parent="59" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="609" parent="60" name="note_id">
+      <comment>note_id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="610" parent="60" name="note_content">
+      <comment>内容</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="611" parent="60" name="owner_id">
+      <comment>谁添加的</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="612" parent="60" name="PRIMARY">
+      <columns>note_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="613" parent="61" name="supplierId">
+      <comment>供应商ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="614" parent="61" name="supplierName">
+      <comment>供应商名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="615" parent="61" name="supplierAddress">
+      <comment>供应商地址</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="616" parent="61" name="supplierTel">
+      <comment>供应商电话</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="617" parent="61" name="supplierUserName">
+      <comment>供应商负责人</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="618" parent="61" name="supplierUserPhone">
+      <comment>供应商负责人电话</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="619" parent="61" name="supplierUserEmail">
+      <comment>供应商负责人邮箱</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="620" parent="61" name="supplierUserQQ">
+      <comment>供应商负责人QQ</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="621" parent="61" name="bankName">
+      <comment>银行名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="622" parent="61" name="bankAccount">
+      <comment>账户</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="623" parent="61" name="bankOpenName">
+      <comment>开户银行</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="624" parent="61" name="cardUserName">
+      <comment>开卡人姓名</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="625" parent="61" name="cardUserPhone">
+      <comment>开卡人电话</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="626" parent="61" name="cardMoney">
+      <comment>金额</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <column id="627" parent="61" name="remark">
+      <comment>备注</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="628" parent="61" name="flag">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="629" parent="61" name="createCompany">
+      <comment>创建公司</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="630" parent="61" name="createUser">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="631" parent="61" name="createTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="632" parent="61" name="reviewer">
+      <comment>审核人</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="633" parent="61" name="reviewTime">
+      <comment>审核时间</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="634" parent="61" name="PRIMARY">
+      <columns>supplierId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="635" parent="62" name="op_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="636" parent="62" name="user_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="637" parent="62" name="action">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="638" parent="62" name="class_name">
+      <comment>操作了哪个类的对象</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="639" parent="62" name="class_obj">
+      <comment>操作的对象是谁，可能为对象的ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="640" parent="62" name="result">
+      <comment>操作的结果</comment>
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="641" parent="62" name="op_time">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="642" parent="62" name="class_name">
+      <columns>class_name</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="643" parent="62" name="op_time">
+      <columns>op_time</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="644" parent="62" name="PRIMARY">
+      <columns>op_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="645" parent="63" name="key_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="646" parent="63" name="key_value">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="647" parent="63" name="PRIMARY">
+      <columns>key_name</columns>
+      <primary>1</primary>
+    </key>
+    <column id="648" parent="64" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="649" parent="64" name="user_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="650" parent="64" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="651" parent="64" name="real_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="652" parent="64" name="mobile">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="653" parent="64" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="654" parent="64" name="user_desc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="655" parent="64" name="login_time">
+      <comment>登录时间</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="656" parent="64" name="status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="657" parent="64" name="login_ip">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="658" parent="64" name="user_group">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="659" parent="64" name="template">
+      <comment>主题模板</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+      <default-expression>&apos;default&apos;</default-expression>
+    </column>
+    <column id="660" parent="64" name="shortcuts">
+      <comment>快捷菜单</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="661" parent="64" name="show_quicknote">
+      <comment>是否显示quicknote</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="662" parent="64" name="companyId">
+      <comment>公司ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="663" parent="64" name="departmentId">
+      <comment>部门ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="664" parent="64" name="employeeId">
+      <comment>员工ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="665" parent="64" name="selectAll">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="666" parent="64" name="user_name">
+      <columns>user_name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="667" parent="64" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="668" parent="64" name="user_name">
+      <columns>user_name</columns>
+      <underlying-index>user_name</underlying-index>
+    </key>
+    <column id="669" parent="65" name="group_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="670" parent="65" name="group_name">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="671" parent="65" name="group_role">
+      <comment>初始权限为1,5,17,18,22,23,24,25</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="672" parent="65" name="owner_id">
+      <comment>创建人ID</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="673" parent="65" name="group_desc">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <key id="674" parent="65" name="PRIMARY">
+      <columns>group_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

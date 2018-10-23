@@ -1,0 +1,88 @@
+2018-09-29 10:00:48|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 13:19:29|ERROR|Warning_Message.Go|exception 'PDOException' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where to_days(createTime)=to_days(now()))' at line 1' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT * FROM v...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(857): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\Message.php(19): NotORM_Result->fetch()
+#3 D:\WWW\ttjxc\api\Version1\Domain\Message\Msg.php(87): Model_Message->invoiceMsgExists('1')
+#4 D:\WWW\ttjxc\api\Version1\Api\Warning\Message.php(10): Domain_Message_Msg::InvoiceWaning('32')
+#5 [internal function]: Api_Warning_Message->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 13:43:57|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 13:44:31|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 13:45:15|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 14:21:18|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 15:50:01|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
+2018-09-29 15:50:14|ERROR|GoodsUnit_Options.Go|exception 'PDOException' with message 'Unknown column 'unitNo' in 'field list'' in D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php:258
+Stack trace:
+#0 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(811): NotORM_Result->query('SELECT unitId,u...', Array)
+#1 D:\WWW\ttjxc\api\PhalApi\NotORM\NotORM\Result.php(896): NotORM_Result->execute()
+#2 D:\WWW\ttjxc\api\Version1\Model\GoodsUnit.php(48): NotORM_Result->fetchAll()
+#3 D:\WWW\ttjxc\api\Version1\Domain\GoodsUnit\Options.php(9): Model_GoodsUnit->getOptions()
+#4 D:\WWW\ttjxc\api\Version1\Api\GoodsUnit\Options.php(15): Domain_GoodsUnit_Options->get()
+#5 [internal function]: Api_GoodsUnit_Options->go()
+#6 D:\WWW\ttjxc\api\PhalApi\PhalApi.php(55): call_user_func(Array)
+#7 D:\WWW\ttjxc\api\Public\v1\index.php(14): PhalApi->response()
+#8 {main}
